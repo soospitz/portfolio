@@ -1,0 +1,503 @@
+body {
+
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+  color: #ea6b8b;
+  word-spacing: 2px;
+}
+
+body.day a {
+  color: #403E43;
+
+}
+
+body.night a {
+  color: #fff;
+}
+
+body.day {
+  background-color: #fff8f8;
+  color: #ea6b8b;
+}
+
+body.night {  
+  background-color: #282627;
+  color: #96d1ea;
+}
+
+body.night #moon {
+  cursor: pointer;
+}
+
+body.day #moon {
+  display: none;
+}
+
+body.night #sun {
+  display: none;
+}
+
+body.day #sun {
+  cursor: pointer;
+}
+
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 20px 20px;
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+/* -------- MENU --------  */
+
+.night .menu {
+ 
+  background-color: #282627;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+}
+
+.day .menu {
+  
+  background-color: #fff8f8;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+
+}
+
+
+nav ul {
+  padding: 0;
+  margin-left: 30px;
+
+}
+
+nav li {
+  display: contents;
+  float: left;
+}
+
+nav a {
+
+  display: inline-block;
+  width: 100px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+  color: #ea6b8b;
+  transition: 1s;
+}
+
+.right {
+
+  float: right;
+  margin-right: 40px;
+
+}
+
+nav a:hover {
+  color: #6C6C6C;
+}
+
+nav a#toggle-button {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  nav {
+    height: auto;
+    padding: 10px;
+    border-bottom: 0;
+  }
+
+  nav ul {
+    display: none;
+    height: auto;
+  }
+
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #282627;
+    color: #8D8273;
+  }
+
+  nav a:hover {
+    color: #6C6C6C;
+  }
+
+  nav a#toggle-button:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+
+  nav a#toggle-button {
+    display: block;
+    background: #282627;
+    color: #8D8273;
+    width: 100%;
+    position: relative;
+  }
+
+  .menu:before, .menu:after {
+    content: "";
+    display: table;
+  }
+
+  .menu:after {
+    clear: both;
+  }
+
+  .menu {
+    zoom: 1;
+  }
+}
+
+
+
+/* --------  HOME -------- */
+ .home{
+
+ 	padding: 130px;
+
+ }
+
+ .night .home-content {
+
+  color: white;
+  text-align: left;
+ }
+
+ .day .home-content {
+
+  color: #403E43;
+  text-align: left;
+ }
+
+ .night h5 {
+
+  color: white;
+ }
+
+ .day h5 {
+
+  color: #403E43;
+ }
+
+ @media screen and (max-width: 580px) {
+
+ 	.section h1 {
+ 		padding-top: 50px;
+
+ 	}
+
+	.section h2 {
+    font-size: 24px;
+	}
+
+	.section p {
+	  display: none;
+	}
+}
+/* --------  ARROW -------- */
+.arrow
+{
+  position: relative;
+  bottom: -9rem;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+
+
+  background-size: contain;
+  background-repeat: no-repeat;;
+}
+
+.day .arrow {
+
+  background-image: url("img/parrow.png");
+}
+
+.night .arrow {
+
+  background-image: url("img/barrow.png");
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* --------  SKILLS -------- */ 
+.skill {
+
+	padding: 30px 20px 20px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+
+}
+
+.skill h1 {
+
+  padding-bottom: 50px;
+}
+
+.day .skills-container {
+
+  color: #343233;
+	display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: left;
+  margin-top: 0px;
+  padding: 30px;
+}
+
+.night .skills-container {
+
+  color: white;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: left;
+  margin-top: 0px;
+  padding: 30px;
+
+}
+
+.day #b-skill-img {
+
+  display: none;
+
+}
+
+.night #p-skill-img {
+
+  display: none;
+
+}
+
+@media screen and (max-width: 580px) {
+      .skills-container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            text-align: left;
+      }
+}
+
+ /* --------  EXPERIENCES -------- */
+.experience {
+
+	background-color: whites;
+	padding: 20px 20px 20px;
+}
+
+.experience-container {
+
+	padding: 40px 20px 20px;
+	text-align: center;
+}
+
+.day .card {
+
+	transition: 0.3s;
+	display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: left;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  margin: 30px 20px 20px;
+  color: #343233;
+}
+
+.night .card {
+
+  transition: 0.3s;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: left;
+  padding: 40px;
+  background: #2d2c2d;
+  border-radius: 10px;
+  margin: 30px 20px 20px;
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1);
+}
+
+.card .pink {
+  display: none;
+}
+
+.card .blue {
+  display: none;
+}
+
+.day .card:hover .pink {
+  display: inline;
+}
+
+.night .card:hover .blue {
+  display: inline;
+}
+
+.card:hover .grey {
+  display: none;
+}
+
+
+
+.item1 {
+
+	text-align: left;
+}
+
+.item2 {
+
+	text-align: center;
+}
+
+
+
+@media screen and (max-width: 580px) {
+      .experience-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+      }
+}
+
+/* --------  PROJECT -------- */
+
+.project-container {
+
+  padding: 40px 20px 20px;
+  text-align: left;
+}
+.project-container p {
+
+  line-height: 1.2;
+  font-size: 0.9em;
+
+}
+
+.leftitem {
+
+  padding: 50px;
+}
+
+.rightitem {
+
+  padding-right: 25px;
+}
+
+.construction {
+  padding: 50px;
+}
+
+
+ /* --------  CONTACT -------- */
+.day .contact {
+  background-color: #fff8f8;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.night .contact {
+
+  background-color: #282627;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container {
+  
+  margin: 50px 80px 20px;
+
+}
+
+#email, #linkedin, #facebook, #instagram, #github {
+
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 580px) {
+  .contact-container {
+
+    margin: 10px;
+    text-align: left;
+    padding: 0;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+  }
+
+
+  #email, #linkedin, #facebook, #instagram, #github {
+
+    height: 40%;
+    padding: 5px;
+  }
+}
+
+  /* --------  FOOTER -------- */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer span .day {
+  color: #ea6b8b;
+  font-weight: 600;
+  background: #fff8f8
+}
+
+footer span .night {
+  color: #96d1ea;
+  font-weight: 600;
+  background: #282627;
+}
