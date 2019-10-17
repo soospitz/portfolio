@@ -534,8 +534,15 @@ nav a#toggle-button {
 
 }
 
-#email, #linkedin, #facebook, #instagram, #github {
+#email, #linkedin, #facebook, #instagram {
 
+  height: 70px;
+  padding: 20px;
+}
+
+#github {
+
+  height: 74px;
   padding: 20px;
 }
 
@@ -555,8 +562,8 @@ nav a#toggle-button {
 
   #email, #linkedin, #facebook, #instagram, #github {
 
-    height: 40%;
-    padding: 5px;
+    height: 40px;
+    padding: 5px 0px 5px;
   }
 }
 
