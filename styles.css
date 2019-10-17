@@ -73,6 +73,10 @@ body.day #sun {
 
 }
 
+nav {
+
+  z-index: 999;
+}
 
 nav ul {
   padding: 0;
@@ -101,7 +105,6 @@ nav a {
 
   float: right;
   margin-right: 40px;
-
 }
 
 nav a:hover {
@@ -130,12 +133,20 @@ nav a#toggle-button {
     position: relative;
   }
 
-  nav a {
+  .day nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #fff8f8;
+    color: #403E43;
+  }
+  
+  .night nav a {
     text-align: left;
     width: 100%;
     text-indent: 25px;
     background: #282627;
-    color: #8D8273;
+    color: white;
   }
 
   nav a:hover {
@@ -153,10 +164,19 @@ nav a#toggle-button {
     top: 20px;
   }
 
-  nav a#toggle-button {
+
+  .day nav a#toggle-button {
+    display: block;
+    background: #fff8f8;
+    color: #403E43;
+    width: 100%;
+    position: relative;
+  }
+
+  .night nav a#toggle-button {
     display: block;
     background: #282627;
-    color: #8D8273;
+    color: white;
     width: 100%;
     position: relative;
   }
@@ -210,7 +230,7 @@ nav a#toggle-button {
 
  	.section h1 {
  		padding-top: 50px;
-
+    text-align: center;
  	}
 
 	.section h2 {
@@ -276,47 +296,59 @@ nav a#toggle-button {
   padding-bottom: 50px;
 }
 
+.skill h4 {
+
+  
+}
+
+.skill-icon {
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+
+}
+
 .day .skills-container {
 
   color: #343233;
 	display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
   grid-template-columns: repeat(5, 1fr);
   text-align: left;
   margin-top: 0px;
-  padding: 30px;
+  padding: 5px;
 }
 
 .night .skills-container {
 
   color: white;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
   grid-template-columns: repeat(5, 1fr);
   text-align: left;
   margin-top: 0px;
-  padding: 30px;
+  padding: 5px;
 
 }
 
 .day #b-skill-img {
 
   display: none;
-
 }
 
 .night #p-skill-img {
 
   display: none;
-
 }
 
 @media screen and (max-width: 580px) {
       .skills-container {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: repeat(1, 1fr);
-            text-align: left;
+          position: relative;
+          display: block;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
       }
 }
 
@@ -383,8 +415,6 @@ nav a#toggle-button {
   display: none;
 }
 
-
-
 .item1 {
 
 	text-align: left;
@@ -403,7 +433,24 @@ nav a#toggle-button {
         grid-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         text-align: left;
+        position: relative;
+        margin: 0px;
       }
+
+      .card, .experience {
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        display:;
+      }
+
+      .card .grey {
+        display: none;
+      }
+
+      .card:hover .item2 {
+        display: none;
+      }    
 }
 
 /* --------  PROJECT -------- */
@@ -434,6 +481,19 @@ nav a#toggle-button {
   padding: 50px;
 }
 
+@media screen and (max-width: 580px) {
+
+      .project-container {
+        text-align: left;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .rightitem {
+        display: none;
+      }    
+}
 
  /* --------  CONTACT -------- */
 .day .contact {
@@ -465,7 +525,7 @@ nav a#toggle-button {
 @media screen and (max-width: 580px) {
   .contact-container {
 
-    margin: 10px;
+    margin: 10px 5px 10px;
     text-align: left;
     padding: 0;
     display: grid;
