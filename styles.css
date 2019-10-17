@@ -344,12 +344,26 @@ nav a#toggle-button {
 }
 
 @media screen and (max-width: 580px) {
-      .skills-container {
-          position: relative;
-          display: block;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+      .night .skills-container {
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+        margin-top: 0px;
+        margin-left: 25px;
+        padding: 5px; 
       }
+      .day .skills-container {
+        color: #343233;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+        margin-top: 0px;
+        margin-left: 25px;
+        padding: 5px;
+      }
+
+  
 }
 
  /* --------  EXPERIENCES -------- */
@@ -450,7 +464,11 @@ nav a#toggle-button {
 
       .card:hover .item2 {
         display: none;
-      }    
+      } 
+
+      .card p {
+        display: none;
+      }   
 }
 
 /* --------  PROJECT -------- */
