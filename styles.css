@@ -20,7 +20,7 @@ body.day {
   color: #282627;
 }
 body.night {
-  background-color: #1d1d1d;
+  background-color: #161616;
   color: #96d1ea;
 }
 
@@ -65,7 +65,7 @@ body.day #link {
 /* -------- MENU --------  */
 
 .night .menu {
-  background-color: #1d1d1d;
+  background-color: #161616;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -385,7 +385,7 @@ nav a#toggle-button {
 /* --------  PROJECT -------- */
 
 .night .project .container {
-  background-color: #151515;
+  background-color: #161616;
 }
 .day .project .container {
   background-color: #ffffff;
@@ -619,7 +619,7 @@ nav a#toggle-button {
 }
 
 .night .contact {
-  background-color: #1d1d1d;
+  background-color: #161616;
   padding: 50px;
   text-align: center;
   align-content: center;
@@ -661,10 +661,11 @@ footer {
   margin: 0 auto;
   text-align: center;
   padding: 1em 0;
+  padding-bottom: 4em;
 }
 
 .night footer{
-  background-color: #1d1d1d;
+  background-color: #161616;
 }
 footer span .day {
   color: #ea6b8b;
@@ -675,5 +676,5 @@ footer span .day {
 footer span .night {
   color: #96d1ea;
   font-weight: 600;
-  background-color: #131313;
+  background-color: #161616;
 }
