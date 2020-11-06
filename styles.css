@@ -1,16 +1,16 @@
 body {
-
-	font-family: 'Ubuntu', sans-serif;
-	margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
   color: #ea6b8b;
   word-spacing: 2px;
+  max-width: 100%;
 }
-
+h4.night {
+  color: #c8c8c9;
+}
 body.day a {
-  color: #403E43;
-
+  color: #403e43;
 }
-
 body.night a {
   color: #fff;
 }
@@ -19,9 +19,8 @@ body.day {
   background-color: #fff8f8;
   color: #282627;
 }
-
-body.night {  
-  background-color: #282627;
+body.night {
+  background-color: #1d1d1d;
   color: #96d1ea;
 }
 
@@ -42,16 +41,15 @@ body.day #sun {
 }
 
 body.night #link {
-  color: #FFFF80;
+  color: #96d1ea;
 }
 
 body.day #link {
   color: #ea6b8b;
 }
 
-
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   text-align: center;
   margin: 0 auto;
   padding: 50px 20px 20px;
@@ -62,34 +60,31 @@ body.day #link {
     padding: 0 2rem;
   }
 }
+
+
 /* -------- MENU --------  */
 
 .night .menu {
- 
-  background-color: #282627;
+  background-color: #1d1d1d;
   height: 60px;
   width: 100%;
   position: fixed;
 }
 
 .day .menu {
-  
   background-color: #fff8f8;
   height: 60px;
   width: 100%;
   position: fixed;
-
 }
 
 nav {
-
   z-index: 999;
 }
 
 nav ul {
   padding: 0;
-  margin-left: 30px;
-
+  padding-left: 30px;
 }
 
 nav li {
@@ -98,7 +93,6 @@ nav li {
 }
 
 nav a {
-
   display: inline-block;
   width: 100px;
   font-weight: 400;
@@ -110,13 +104,12 @@ nav a {
 }
 
 .right {
-
   float: right;
   margin-right: 40px;
 }
 
 nav a:hover {
-  color: #6C6C6C;
+  color: #6c6c6c;
 }
 
 nav a#toggle-button {
@@ -146,19 +139,19 @@ nav a#toggle-button {
     width: 100%;
     text-indent: 25px;
     background: #fff8f8;
-    color: #403E43;
+    color: #403e43;
   }
-  
+
   .night nav a {
     text-align: left;
     width: 100%;
     text-indent: 25px;
-    background: #282627;
+    background: #131313;
     color: white;
   }
 
   nav a:hover {
-    color: #6C6C6C;
+    color: #6c6c6c;
   }
 
   nav a#toggle-button:after {
@@ -172,11 +165,10 @@ nav a#toggle-button {
     top: 20px;
   }
 
-
   .day nav a#toggle-button {
     display: block;
     background: #fff8f8;
-    color: #403E43;
+    color: #403e43;
     width: 100%;
     position: relative;
   }
@@ -189,7 +181,8 @@ nav a#toggle-button {
     position: relative;
   }
 
-  .menu:before, .menu:after {
+  .menu:before,
+  .menu:after {
     content: "";
     display: table;
   }
@@ -203,75 +196,70 @@ nav a#toggle-button {
   }
 }
 
-
-
 /* --------  HOME -------- */
- .home{
+.home {
+  padding: 130px;
+  margin-bottom: 40px;
+}
 
- 	padding: 130px;
-
- }
-
- .night .home-content {
-
+.night .home-content {
   color: white;
   text-align: left;
- }
+}
+.night .home-content p {
+  color: #8a8983;
+}
 
- .day .home-content {
-
-  color: #403E43;
+.day .home-content {
+  color: #403e43;
   text-align: left;
- }
+}
 
- .night h5 {
+.day .home-content p {
+  color: #8a8983;
+}
 
-  color: white;
- }
+.night h5 {
+  color: #8a898c;
+}
 
- .day h5 {
+.day h5 {
+  color: #403e43;
+}
 
-  color: #403E43;
- }
-
- @media screen and (max-width: 580px) {
-
- 	.section h1 {
- 		padding-top: 50px;
+@media screen and (max-width: 580px) {
+  .section h1 {
+    padding-top: 50px;
     text-align: center;
- 	}
+  }
 
-	.section h2 {
+  .section h2 {
     font-size: 24px;
-	}
+  }
 
-	.section p {
-	  display: none;
-	}
+  .section p {
+    display: none;
+  }
 }
 /* --------  ARROW -------- */
-.arrow
-{
+.arrow {
   position: relative;
   bottom: -10rem;
   left: 50%;
-  margin-left:-20px;
+  margin-left: -20px;
   width: 40px;
   height: 40px;
   padding-bottom: 30px;
 
-
   background-size: contain;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
 }
 
 .day .arrow {
-
   background-image: url("img/parrow.png");
 }
 
 .night .arrow {
-
   background-image: url("img/barrow.png");
 }
 
@@ -280,7 +268,11 @@ nav a#toggle-button {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -291,217 +283,120 @@ nav a#toggle-button {
   }
 }
 
-/* --------  SKILLS -------- */ 
-.skill {
 
-	padding: 30px 20px 20px;
-  letter-spacing: 2px;
-  line-height: 1.5;
-
-}
-
-.skill h1 {
-
-  padding-bottom: 50px;
-}
-
-.skill h4 {
-
-  
-}
-
-.skill-icon {
-
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  text-align: center;
-
-}
-
-.day .skills-container {
-
-  color: #343233;
-	display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: left;
-  margin-top: 0px;
-  padding: 5px;
-}
-
-.night .skills-container {
-
-  color: white;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: left;
-  margin-top: 0px;
-  padding: 5px;
-
-}
-
-.day #b-skill-img {
-
-  display: none;
-}
-
-.night #p-skill-img {
-
-  display: none;
-}
-
-@media screen and (max-width: 580px) {
-      .night .skills-container {
-        color: white;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: left;
-        margin-top: 0px;
-        margin-left: 25px;
-        padding: 5px; 
-      }
-      .day .skills-container {
-        color: #343233;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: left;
-        margin-top: 0px;
-        margin-left: 25px;
-        padding: 5px;
-      }
-
-  
-}
-
- /* --------  EXPERIENCES -------- */
+/* --------  EXPERIENCES -------- */
 .experience {
-
-	background-color: whites;
-	padding: 20px 20px 20px;
+  padding: 20px 20px 20px;
+}
+.day .experience {
+  background-color: white;
 }
 
 .experience-container {
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+.experience-container img {
+  padding-top: 90px;
 
-	padding: 40px 20px 20px;
-	text-align: center;
+}
+.night #logo-day {
+  display: none;
+}
+.day #logo-night {
+  display: none;
+}
+.card .front {
+  display: block;
+}
+.card .back {
+  display: none;
+  text-align: left;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  max-width: 100%;
 }
 
-.day .card {
+.card {
+  transition: 0.3s;
+  text-align: center;
+  height: 283px;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 15px;
+}
 
-	transition: 0.3s;
-	display: grid;
-  grid-template-columns: 2fr 1fr;
-  text-align: left;
-  padding: 40px;
-  background: #ffefef;
-  border-radius: 10px;
-  margin: 30px 20px 20px;
+
+.day .card {
+ 
   color: #343233;
+  background-color: #fff8f8;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.day .card:hover {
+  background-color: #ffffff;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .night .card {
-
-  transition: 0.3s;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  text-align: left;
-  padding: 40px;
-  background: #2d2c2d;
-  border-radius: 10px;
-  margin: 30px 20px 20px;
   color: white;
+  background-color: #202022;
 }
-
+.night .card h4 {
+  color: #79797B;
+}
+.night .card p {
+  color: #C6C6C6;
+}
+.night .card:hover {
+  background-color: #28282b;
+}
 .card:hover {
-  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
 }
-
-.card .pink {
-  display: none;
+.play {
+  line-height: 0.3em;
 }
-
-.card .blue {
-  display: none;
-}
-
-.day .card:hover .pink {
-  display: inline;
-}
-
-.night .card:hover .blue {
-  display: inline;
-}
-
-.card:hover .grey {
-  display: none;
-}
-
-.item1 {
-
-	text-align: left;
-}
-
-.item2 {
-
-	text-align: center;
-}
-
-
-
 @media screen and (max-width: 580px) {
-      .experience-container {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: left;
-        position: relative;
-        margin: 0px;
-      }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .experience-container {
+ 
+    position: relative;
+    margin: 0px;
+  }
 
-      .card, .experience {
-        position: relative;
-        margin: 0px;
-        padding: 0px;
-        display:;
-      }
+  .card,
+  .experience {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+  }
 
-      .card .grey {
-        display: none;
-      }
-
-      .card:hover .item2 {
-        display: none;
-      } 
-
-      .card p {
-        display: none;
-      }   
 }
 
 /* --------  PROJECT -------- */
 
+.night .project .container {
+  background-color: #151515;
+}
+.day .project .container {
+  background-color: #ffffff;
+}
 .project-container {
-
   padding: 40px 20px 20px;
-  text-align: left;
+  text-align: center;
 }
 .project-container p {
-
   line-height: 1.2;
   font-size: 0.9em;
-
-}
-
-.leftitem {
-
-  padding: 50px;
-}
-
-.rightitem {
-
-  padding-right: 25px;
 }
 
 .haven {
@@ -509,109 +404,258 @@ nav a#toggle-button {
 }
 
 .ios {
-
   padding-right: 50px;
 }
 
-.card p {
-  padding-left: 2em;
-}
-
 #cssProject {
-
   line-height: 200%;
   letter-spacing: 1.5px;
   margin-left: -50px;
   margin-top: 30px;
 }
 
-.night #cssProject a:hover {
 
+@media screen and (max-width: 580px) {
+  .project-container {
+    text-align: left;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* -------- Project - CSS heart -------*/
+.heart {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 40px;
+  height: 160px;
+  padding-top: 55px;
+  transform-style: preserve-3d;
+  animation: spin 15s infinite linear;
+}
+
+.heart1 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-width: 1px 1px 0 0;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 0.5s infinite alternate linear;
+  transform: rotateY(50deg) rotateZ(45deg) translateX(62px);
+  border: solid #ec2d73;
+  border-width: 5px 5px 0 0;
+}
+
+.heart2 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-width: 1px 1px 0 0;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 1s infinite alternate linear;
+  transform: rotateY(100deg) rotateZ(45deg) translateX(62px);
+  border: solid #eb5324;
+  border-width: 5px 5px 0 0;
+}
+
+.heart3 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 1.5s infinite alternate linear;
+  transform: rotateY(150deg) rotateZ(45deg) translateX(62px);
+  border: solid #fdc800;
+  border-width: 4px 4px 0 0;
+}
+
+.heart4 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-width: 1px 1px 0 0;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 2s infinite alternate linear;
+  transform: rotateY(200deg) rotateZ(45deg) translateX(62px);
+  border: solid #60b247;
+  border-width: 5px 5px 0 0;
+  }
+
+.heart5 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-width: 1px 1px 0 0;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 2.5s infinite alternate linear;
+  transform: rotateY(250deg) rotateZ(45deg) translateX(62px);
+  border: solid #1470bd;
+  border-width: 5px 5px 0 0;
+}
+
+.heart6 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-width: 1px 1px 0 0;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 3s infinite alternate linear;
+  transform: rotateY(300deg) rotateZ(45deg) translateX(62px);
+  border: solid #76469a;
+  border-width: 5px 5px 0 0;
+}
+
+.heart7 {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 160px;
+  border-width: 1px 1px 0 0;
+  border-radius: 60% 80% 0 / 40% 50% 0;
+  animation: show 1s 3.5s infinite alternate linear;
+  transform: rotateY(350deg) rotateZ(45deg) translateX(62px);
+  border: solid #BD245C;
+  border-width: 5px 5px 0 0;
+}
+
+
+@keyframes spin {
+  to {
+      transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes show {
+  from {
+      opacity:1;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* --------  SKILLS -------- */
+
+.skill h1 {
+  padding-bottom: 50px;
+}
+
+.skill i {
   color: #96d1ea;
+  text-align: center;
 }
-.night #cssProject a {
 
-  color: #fff;
+.night .skill .container {
+  background-color: #151515;
 }
-.day #cssProject a {
 
-  color: #282627;
+.skills-container {
+  padding: 30px 20px 20px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: left;
+  margin-top: 0px;
+  padding: 15px;
 }
-.day #cssProject a:hover {
 
+.day .skills-container {
+  color: #343233;
+}
+
+.night .skills-container {
+  color: white;
+}
+
+.day #b-skill-img {
+  display: none;
+}
+
+.night #p-skill-img {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .night .skills-container {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 25px;
+    padding: 5px;
+  }
+  .day .skills-container {
+    color: #343233;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 25px;
+    padding: 5px;
+  }
+}
+
+/* --------  CONTACT -------- */
+.day .contact {
+  background-color: #fff8f8;
+  padding: 50px;
+  text-align: center;
+  align-content: space-evenly;
+}
+.day .contact a:hover {
   color: #ea6b8b;
 }
 
-
-@media screen and (max-width: 580px) {
-
-      .project-container {
-        text-align: left;
-        position: relative;
-        margin: 0px;
-        padding: 0px;
-      }
-
-      .rightitem {
-        display: none;
-      }    
-}
-
- /* --------  CONTACT -------- */
-.day .contact {
-  background-color: #fff8f8;
-  padding: 20px;
-  text-align: center;
-
-}
-
 .night .contact {
-
-  background-color: #282627;
-  padding: 20px;
+  background-color: #1d1d1d;
+  padding: 50px;
   text-align: center;
+  align-content: center;
+}
+.night .contact a:hover {
+  color: #96d1ea;
 }
 
-.contact-container {
-  
-  margin: 50px 80px 20px;
-
-}
-
-#email, #linkedin, #facebook, #instagram {
-
-  height: 70px;
+.contact-container .icons {
   padding: 20px;
+  justify-content: space-evenly;
 }
 
-#github {
-
-  height: 74px;
-  padding: 20px;
+#email,
+#linkedin,
+#github,
+#instagram {
+  padding: 15px;
 }
-
 
 @media screen and (max-width: 580px) {
-  .contact-container {
-
+  
+  .contact-container .icons{
     margin: 10px 5px 10px;
     text-align: left;
     padding: 0;
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: left;
   }
 
 
-  #email, #linkedin, #facebook, #instagram, #github {
-
-    height: 40px;
-    padding: 5px 0px 5px;
-  }
 }
 
-  /* --------  FOOTER -------- */
+/* --------  FOOTER -------- */
 footer {
   width: 100%;
   margin: 0 auto;
@@ -619,14 +663,17 @@ footer {
   padding: 1em 0;
 }
 
+.night footer{
+  background-color: #1d1d1d;
+}
 footer span .day {
   color: #ea6b8b;
   font-weight: 600;
-  background: #fff8f8
+  background: #fff8f8;
 }
 
 footer span .night {
   color: #96d1ea;
   font-weight: 600;
-  background: #282627;
+  background-color: #131313;
 }

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ccde37258c.js" crossorigin="anonymous"></script>
 	<link rel="shortcut icon" href="img/cmoon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
 					<div class="right">
 						<li><a href="#project">PROJECTS</a></li>
 						<li><a href="#experience">EXPERIENCES</a></li>
-						<li><a href="#skill">SKILLS</a></li>
+						<!-- <li><a href="#skill">SKILLS</a></li> -->
 						<li><a href="#contact">CONTACT</a></li>
 					</div>
 				</ul>
@@ -44,8 +45,9 @@
 				<h5>Click Me!</h5>
 				<div class="home-content">
 					<h1>Soo Spitz</h1>
-					<p>Hi!  &mdash;  I am a student at New York University <i class="em em-female-student" aria-role="presentation" aria-label=""></i> majoring in Computer Science <i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>, minoring in Web Development <i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> and Graphic Design! <i class="em em-lower_left_paintbrush" aria-role="presentation" aria-label=""></i> Currently located in New York City <i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i> looking for full-time opportunities!</p>
+					<p>Hi!  &mdash;  I am a recent graduate from New York University <i class="em em-female-student" aria-role="presentation" aria-label=""></i> major in Computer Science <i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>, minoring in Web Development <i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> and Graphic Design! <i class="em em-lower_left_paintbrush" aria-role="presentation" aria-label=""></i> Currently located in New York City <i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i> looking for full-time opportunities!</p>
 				</div>
+				
 			</div>
 			<div class="arrow bounce"></div>
 		</div>
@@ -55,160 +57,219 @@
 <!------ projects ------>
 	<div class="project" id="project">
 		<div class="container">
-			<h1>Projects</h1>
+			<h1>PROJECTS</h1>
 				<div class="project-container">
+					<div class="cards">
 					<div class="card">
-						<div class="leftitem">
-							<h2>JUMPEACH | 2018</h2>
+						<div class="front">
+							<img src="img/subway.png" alt="subway" style="height: 100px; padding-top:80px">
+						</div>
+						<div  class="back">
+							<h2>NYC Subway | React</h2>
+							<h4>Subway Schedule App using <i>React</i></h4>
+							<p>Real-time NYC Subway Schedule App that allows users to search and display NYC Subway arrival times<br>
+								Implemented MTA’s real-time subway feed API to render and auto-refresh data using React JS and Moment JS</p>
+							<h4>Check out the code <a href="https://github.com/soospitz/subway/" id="link">here</a></h4>
+						
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="img/subway.png" alt="subway" id="logo-night" style="height: 100px; padding-top:80px">
+							<img src="img/subwayb.png" alt="subway" id="logo-day" style="height: 100px; padding-top:80px">
+						</div>
+						<div class="back">
+							<h2>PM Shop | React</h2>
+							<h4>Online Shop Web App using <i>React</i></h4>
+							<p>• Website that allows user to browse <br/> products and add to cart<br/>
+								• Features filterable and sortable <br/>list of products, add and remove items <br/>from cart,
+								responsive design, and <br/>dynamic routing using React-Router</p>
+							<h4>Check out the code <a href="https://github.com/soospitz/pmShop/" id="link">here</a></h4>
+						</div>
+					</div>
+					<div class="card">
+						<div class="back">
+							<h2>JUMPEACH | C#</h2>
 							<h4>Platform Game made with Unity using <i>C#</i></h4>
 							<p>Play the game on the left!<br>
 								Reach the <font color="green">GREEN</font> <i class="em em-cloud" aria-role="presentation" aria-label="CLOUD"></i> to win<br>
 								Jump on the <font color="grey">GREY</font> <i class="em em-cloud" aria-role="presentation" aria-label="CLOUD"></i> for boost <br>
 								Watch out for the <font color="pink">PINK</font> <i class="em em-cloud" aria-role="presentation" aria-label="CLOUD"></i></p>
-							<h4>Check out the code <a href="https://github.com/soospitz/JUMPEACH/" id="link">here</a></h4>
+							<div class="play">
+								<h4>Play the game <a href="./peachjump/index.html" id="link">here</a></h4>
+								<h4>Check out the code <a href="https://github.com/soospitz/JUMPEACH/" id="link">here</a></h4>
+							</div>	
 						</div>
-						<div class="rightitem">
-							<iframe frameborder="0" src="https://itch.io/embed-upload/1717298?color=333333" allowfullscreen="" width="470" height="540"></iframe>
-						</div>
-					</div>
-					<div class="card">
-						<div class="leftitem">
-							<h2>Networking Platform | 2019</h2>
-							<h4>Software Engineering project using<br>
-								<i>React, MongoDB, Express, Jwt, Node</i><br>
-								with Agile workflow on GitHub</h4>
-							<p>This platform is for artists and performers to <br>
-								showcase their talents and find clients based on <br>
-								their local availability and collaborate (artists, <br>
-								photographers etc.)</p>
-							<h4>Check out the code <a href="https://github.com/nyu-software-engineering/fall-2019-music-suggestions" id="link">here</a></h4>
-						</div>
-						<div class="rightitem">
+						<div class="front">
 							<div class="haven">
-								<img src="img/haven.png" style="height: 270px;">
+								<img src="img/jumpeach.png" style="height: 170px;">
 							</div>
 						</div>
 					</div>
 					<div class="card">
-						<div class="leftitem">
-							<h2>Life Calculator | 2019</h2>
+						<div class="front">
+							<div class="haven">
+								<img src="img/haven.png" style="height: 170px;">
+							</div>
+						</div>
+						<div class="back">
+							<h2>Networking Platform</h2>
+							<h4>Software Engineering project using
+								<i>React, MongoDB, Express, Jwt, Node</i>
+								with Agile workflow on GitHub</h4>
+							<p>This platform is for artists and performers to 
+								showcase their talents and find clients based on 
+								their local availability and collaborate (artists,
+								photographers etc.)</p>
+							<h4>Check out the code <a href="https://github.com/nyu-software-engineering/fall-2019-music-suggestions" id="link">here</a></h4>
+
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<div class="ios">
+								<img src="img/iOS.png" style="height: 230px; padding-top:30px; padding-left:15px">
+							</div>
+						</div>
+						<div class="back">
+							<h2>Life Calculator | Swift</h2>
 							<h4>iOS application made with xCode using <i>Swift</i></h4>
-							<p>This iOS app allows users to plan and rate their <br>
-								goals in customizable categories<br>
-								Integrated Core Data for user data and used <br>
-							animation and graphics for UIc</p>
+							<p>• This iOS app allows users to plan and rate their goals in customizable categories<br>
+								• Integrated Core Data for user data and used animation and graphics for UIc</p>
 							<h4>Check out the code <a href="https://github.com/soospitz/LifeCalculator/" id="link">here</a></h4>
 						</div>
-						<div class="rightitem">
+						<!-- <div class="rightitem">
 							<div class="ios">
 								<img src="img/iOS.png" style="height: 330px;">
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<div class="card">
-						<div class="leftitem">
+						<div class="back">
 							<h2>LOBO Mockup | 2019</h2>
 							<h4>Interactive mobile application mockup <br>made with <i>Adobe XD</i></h4>
+							<div class="play">
+								<h4>Check out the Mockup <a href="./lobo/index.html" id="link">here</a></h4>
+							</div>
 						</div>
-						<div class="rightitem">
-							<video width="470" height="390" controls>
+						<div class="front">
+							<img src="img/lobo.png" id="logo-night" style="height: 100px; padding-top:80px">
+							<img src="img/lobob.png" id="logo-day" style="height: 100px; padding-top:80px">
+							<!-- <video width="470" height="390" controls>
   							 <source src="mockup.mp4" type="video/mp4">
-						    </video>
-						</div>
+							</video> -->
+							</div>
 					</div>
 					<div class="card">
-						<div class="leftitem">
+						<div class="back">
 							<h2>Motion Graphics Project | 2018</h2>
 							<h4>Short personal animation project <br>made with <i>Adobe After Effects</i></h4>
+							<h4>Check out the Video <a href="./motion/index.html" id="link">here</a></h4>
 						</div>
-						<div class="rightitem">
-							<video width="470" height="390" controls>
+						<div class="front">
+							<img src="img/1996.png" style="height: 250px;">
+							<!-- <video width="470" height="390" controls>
   							 <source src="motion.mp4" type="video/mp4">
-						    </video>
+						    </video> -->
 						</div>
 					</div>
 					<div class="card">
-						<div class="leftitem">
+						<div class="back">
 							<h2>CSS Animations | 2020</h2>
 							<h4>Links to fun <i>CSS</i> Animation projects</h4>
-						</div>
-						<div class="rightitem" id="cssProject">
-							<ul>
-								<li><a href="http://i6.cims.nyu.edu/~sks568/spring2020/assignment3/index.html" id="link">Heart Animation</a></li>
-								<li><a href="http://i6.cims.nyu.edu/~sks568/spring2020/assignment1/index.html" id="link">Multilayered drawing</a></li>
+							<li><a href="./css1/index.html" id="link">Heart Animation</a></li>
+								<li><a href="./css2/index.html" id="link">Multilayered drawing</a></li>
 								<li>More to come!</li>
-						    </ul>
+						</div>
+						<div class="front">
+							<div class='heart'>
+								<div class='heart1'></div>
+								<div class='heart2'></div>
+								<div class='heart3'></div>
+								<div class='heart4'></div>
+								<div class='heart5'></div>  
+								<div class='heart6'></div>
+								<div class='heart7'></div>
+								<div class='heart8'></div>
+							  </div>
 						</div>
 					</div>
-			
+				</div>
 				</div>
 		</div>
 	</div>
-
+	
 	<!------ end of projects ------>
 
 	<!------ experiences ------>
 	<div class="experience" id="experience">
 		<div class="container">
 			<div class="experience-container">
-				<h1>Experiences</h1>
+				<h1>EXPERIENCES</h1>
+				<div class="cards">
 				<div class="card">
-					<div class="item1">
+					<div class="back">
 						<h2>NYU Gallatin | 2020</h2>
 						<h4>Web Developer</h4>
+						<p>• Maintain NYU Gallatin website to improve maintainability and accessibility while enhancing efficiency and performance<br>
+							• Perform code refactoring for the entire website using CSS preprocessors (LESS) in the Adobe Experience Manager (AEM) framework</p>
 					</div>
-					<div class="item2">
-						<img src="img/gnyu.png" alt="nyugrey" class="grey" style="height: 150px;">
-						<img src="img/pnyu.png" alt="nyupink" class="pink" style="height: 150px;">
-						<img src="img/bnyu.png" alt="nyublue" class="blue" style="height: 150px;">
+					<div class="front">
+						<img src="img/gallatin.png" id="logo-night" style="height: 150px; padding-top: 55px;">
+						<img src="img/gallatin2.png" id="logo-day" style="height: 150px; padding-top: 55px;">
 					</div>
 					
 				</div>
 				<div class="card">
-					<div class="item1">
+					<div class="back">
 						<h2>Marriott International HQ | 2019</h2>
 						<h4>Systems Intern</h4>
+						<p>• Built an interactive mobile application mockup using Adobe XD for Marriott’s comprehensive architectural design database portal<br>
+							• Improved UI and UX of the application by testing and working cross-functionally
+							</p>
 					</div>
-					<div class="item2">
-						<img src="img/gmarriott.png" alt="marriottgrey" class="grey" style="height: 150px;">
-						<img src="img/pmarriott.png" alt="marriottpink" class="pink" style="height: 150px;">
-						<img src="img/bmarriott.png" alt="marriottblue" class="blue" style="height: 150px;">
+					<div class="front">
+						<img src="img/marriott.png" id="logo-night" alt="marriottLogo" style="height: 70px;">
+						<img src="img/marriottr.png" id="logo-day" alt="marriottLogo" style="height: 70px;">
 					</div>
 					
 				</div>
 				<div class="card">
-					<div class="item1">
+					<div class="back">
 						<h2>NYU IT OTSS | 2018-2019</h2>
 						<h4>Business Analyst & Tester</h4>
+						<p>• Assisted in designing and developing software solutions for internal NYU clients<br>
+							• Conducted manual tests and created test plans for new functionalities and documented test cases<p></p>
+							
 					</div>
-					<div class="item2">
-						<img src="img/gnyu.png" alt="nyugrey" class="grey" style="height: 150px;">
-						<img src="img/pnyu.png" alt="nyupink" class="pink" style="height: 150px;">
-						<img src="img/bnyu.png" alt="nyublue" class="blue" style="height: 150px;">
+					<div class="front">
+						<img src="img/nyuit.png" id="logo-night" style="height: 50px;">
+						<img src="img/nyuit2.png" id="logo-day" style="height: 50px;">
 					</div>
 				</div>
 				<div class="card">
-					<div class="item1">
-						<h2>Genuine: The Real People Company | 2016-2018</h2>
+					<div class="back">
+						<h2>Genuine | 2016-2018</h2>
 						<h4>Casting Assistant</h4>
+						<p>• Create and maintain the company’s database by reaching out, interviewing and writing a summary of each qualified candidate<br>
+							• Recruit and screen real people for current and future casting projects </p>
 					</div>
-					<div class="item2">
-						<img src="img/ggenuine.png" alt="genuinegrey" class="grey" style="height: 150px;">
-						<img src="img/pgenuine.png" alt="genuinepink" class="pink" style="height: 150px;">
-						<img src="img/bgenuine.png" alt="genuineblue" class="blue" style="height: 150px;">
+					<div class="front">
+						<img src="img/genuine.png" alt="genuinegrey" style="height: 100px;">
 					</div>
 				</div>
 				<div class="card">
-					<div class="item1">
+					<div class="back">
 						<h2>Selldorf Architects | 2015-2016</h2>
 						<h4>Interior Design Intern</h4>
+						<p>Increased productivity by reorganizing the Interiors sample library and coordinated in returning fabric samples to 50+ showrooms in NYC</p>
 					</div>
-					<div class="item2">
-						<img src="img/gselldorf.png" alt="selldorfgrey" class="grey" style="height: 100px;">
-						<img src="img/pselldorf.png" alt="selldorfpink" class="pink" style="height: 100px;">
-						<img src="img/bselldorf.png" alt="selldorfblue" class="blue" style="height: 100px;">
+					<div class="front">
+						<img src="img/selldorf.png" id="logo-night" alt="selldorf" style="height: 70px;">
+						<img src="img/selldorfb.png" id="logo-day" alt="selldorf" style="height: 70px;">
 					</div>
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -217,56 +278,24 @@
 
 
 	<!------ skills ------>
-	<div class="skill" id="skill">
+	<!-- <div class="skill" id="skill">
 		<div class="container">
 			<h1>Skills</h1>
-
-			<div class="skill-icon">
-				<div class="s1">
-					<img src="img/planguage.png" alt="language" id="p-skill-img" style="height: 50px;">
-					<img src="img/blanguage.png" alt="language" id="b-skill-img" style="height: 50px;">
-				</div>
-				<div class="s2">
-					<img src="img/pwebdev.png" alt="webdev" id="p-skill-img" style="height: 45px;">
-					<img src="img/bwebdev.png" alt="webdev" id="b-skill-img" style="height: 45px;">
-				</div>
-				<div class="s3">
-					<img src="img/ptool.png" alt="tool" id="p-skill-img" style="height: 50px;">
-					<img src="img/btool.png" alt="tool" id="b-skill-img" style="height: 50px;">
-				</div>
-				<div class="s4">
-					<img src="img/pdesign.png" alt="design" id="p-skill-img" style="height: 50px;">
-					<img src="img/bdesign.png" alt="design" id="b-skill-img" style="height: 50px;">
-				</div>
-				<div class="s5">
-					<img src="img/pother.png" alt="other" id="p-skill-img" style="height: 60px;">
-					<img src="img/bother.png" alt="other" id="b-skill-img" style="height: 60px;">
-				</div>
-			</div>
 
 			<div class="skills-container">
 
 				<div class="sc1">
+					<i class="fas fa-code fa-4x"></i>
 					<ul>
 						<h4>LANGUAGES</h4>
-						<li>Java</li>
 						<li>JavaScript</li>
-						<li>C</li>
-						<li>Objective-C</li>
-						<li>Swift</li>
-						<li>Processing</li>
-						<li>Python</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
 					</ul>
 				</div>
 				<div class="sc2">
-					<ul>
-						<h4>WEB DEV</h4>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Ruby On Rails</li>
-					</ul>
-				</div>
-				<div class="sc3">
+					<i class="fas fa-wrench fa-4x"></i>
 					<ul>
 						<h4>TOOLS</h4>
 						<li>Xcode</li>
@@ -275,7 +304,8 @@
 						<li>MS Office</li>
 					</ul>
 				</div>
-				<div class="sc4">
+				<div class="sc2">
+					<i class="fas fa-palette fa-4x"></i>
 					<ul>
 						<h4>DESIGN</h4>
 						<li>Adobe Illustrator</li>
@@ -285,7 +315,8 @@
 						<li>Adobe After Effects</li>
 					</ul>
 				</div>
-					<div class="sc5">
+					<div class="sc4">
+						<i class="fas fa-globe-americas fa-4x"></i>
 					<ul>
 						<h4>OTHER</h4>
 						<li>Native in Korean and English</li>
@@ -294,22 +325,23 @@
 				</div>	
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!------ end of skills ------>
-
 
 
 	<!------ contact ------>
 	<div class="contact" id="contact">
 		<div class="container">
-			<h1>Contact</h1>
+			<h1></h1>
 			<div class="contact-container">
-				<a href="mailto:sks568@nyu.edu"><img src="img/gemail.png" alt="grey email" id="email"></a>
-				<a href="https://www.linkedin.com/in/soospitz/"><img src="img/glinkedin.png" alt="grey linkedin" id="linkedin"></a>
-				<a href="https://www.facebook.com/soo.spitz"><img src="img/gfacebook.png" alt="grey facebook" id="facebook"></a>
-				<a href="https://www.instagram.com/soo___oos/"><img src="img/ginstagram.png" alt="grey instagram" id="instagram"></a>
-				<a href="https://github.com/soospitz"><img src="img/ggithub.png" alt="grey github" id="github"></a>
-			</div>
+				<div class="icons">
+					<a href="mailto:soospitz@gmail.com"><i class="far fa-envelope fa-4x" id="email"></i></a>
+					<a href="https://www.linkedin.com/in/soospitz/"><i class="fab fa-linkedin fa-4x" id="linkedin"></i></a>
+					<a href="https://www.instagram.com/soo___oos/"><i class="fab fa-instagram fa-4x" id="instagram"></i></a>
+					<a href="https://github.com/soospitz"><i class="fab fa-github fa-4x" id="github"></i></a>
+				</div>
+				
+				</div>
 		</div>
 	</div>
 	<!------ end of contact ------>
@@ -317,11 +349,13 @@
 
 
 	<!------ footer ------>
-	<footer>
+	<div class="footer">
+		<footer>
 
-		<span>©Soo Spitz 2019</span>
+			<span>Made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i> by Soo Spitz</span>
 
-	</footer>
+		</footer>
+	</div>
 	<!------ end of footer ------>
 
 	<script src="script.js"></script>

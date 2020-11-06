@@ -1,0 +1,204 @@
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.r {
+	height: 10px;
+	width: 100%;
+	margin-top:-10px;
+	background-color: #111;
+}
+
+.road1 {
+	padding-top: 60px;
+	background-color: #ff7582;
+}
+
+.road2 {
+	padding-top: 60px;
+	background-color: #725a7a;
+}
+
+.road3 {
+	padding-top: 60px;
+	background-color: #c56c86;
+}
+
+.road4 {
+	padding-top: 60px;
+	background-color: #355c7d;
+}
+
+.car1 {
+	padding-right: 100px;
+	height: 90px;
+	position: relative;
+	transform: scaleX(-1);
+	animation-name: moveLR;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+}
+.car1:hover {
+	animation-play-state: paused;
+}
+
+.car2 {
+	padding-left: 100px;
+	height: 90px;
+	left:100%;
+	position: relative;
+	animation-name: moveRL;
+	animation-duration: 13s;
+	animation-iteration-count: infinite;
+}
+.car2:hover {
+	animation-play-state: paused;
+}
+
+.car3 {
+	padding-right: 100px;
+	height: 110px;
+	position: relative;
+	transform: scaleX(-1);
+	animation-name: moveLR;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.car3:hover {
+	animation-play-state: paused;
+}
+
+.car4 {
+	padding-left: 100px;
+	height: 90px;
+	left:100%;
+	position: relative;
+	animation-name: moveRL;
+	animation-duration: 13s;
+	animation-iteration-count: infinite;
+}
+.car4:hover {
+	animation-play-state: paused;
+}
+
+.car5 {
+	padding-right: 100px;
+	height: 90px;
+	position: relative;
+	transform: scaleX(-1);
+	animation-name: moveLR;
+	animation-duration: 13s;
+	animation-iteration-count: infinite;
+}
+.car5:hover {
+	animation-play-state: paused;
+}
+
+.car6 {
+	padding-right: 100px;
+	height: 110px;
+	position: relative;
+	transform: scaleX(-1);
+	animation-name: moveLR;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.car6:hover {
+	
+	animation-play-state: paused;
+}
+
+.car7 {
+	padding-left: 100px;
+	height: 90px;
+	left:100%;
+	position: relative;
+	animation-name: moveRL;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.car7:hover {
+	animation-play-state: paused;
+}
+.car8 {
+	padding-right: 100px;
+	height: 90px;
+	position: relative;
+	transform: scaleX(-1);
+	animation-name: moveLR;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+}
+.car8:hover {
+	animation-play-state: paused;
+}
+.car9 {
+	padding-left: 100px;
+	height: 100px;
+	left:100%;
+	position: relative;
+	animation-name: moveRL;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+.car9:hover {
+	animation-play-state: paused;
+}
+.car10 {
+	padding-left: 100px;
+	height: 90px;
+	left:100%;
+	position: relative;
+	animation-name: moveRL;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.car10:hover {
+	animation-play-state: paused;
+}
+.car11 {
+	padding-left: 100px;
+	height: 110px;
+	left:100%;
+	position: relative;
+	animation-name: move11;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+}
+.car11:hover {
+	animation-play-state: paused;
+}
+@keyframes move11 {
+	0%   {left:100%;}
+	100% {left:-105%;}
+}
+
+.car13 {
+	padding-right: 100px;
+	height: 110px;
+	position: relative;
+	transform: scaleX(-1);
+	animation-name: moveLR;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+.car13:hover {
+	animation-play-state: paused;
+}
+@keyframes moveLR {
+	0%   {left:-75%;}
+	100% {left:110%;}
+}
+@keyframes moveRL {
+	0%   {left:100%;}
+	100% {left:-95%;}
+}
+
+
+
+

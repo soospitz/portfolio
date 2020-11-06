@@ -1,0 +1,127 @@
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #151515;
+}
+.buttons {
+    padding-top: 80px;
+    padding-left: 20px;
+}
+
+.button {
+    background-color: #1470bd; 
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px 10px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {
+    opacity: 50%;
+}
+
+.heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    height: 325px;
+    transform-style: preserve-3d;
+}
+
+
+#heart1 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(50deg) rotateZ(45deg) translateX(62px);
+    border: solid #ec2d73;
+    border-width: 5px 5px 0 0;
+}
+
+#heart2 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(100deg) rotateZ(45deg) translateX(62px);
+    border: solid #eb5324;
+    border-width: 5px 5px 0 0;
+}
+
+#heart3 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(150deg) rotateZ(45deg) translateX(62px);
+    border: solid #fdc800;
+    border-width: 5px 5px 0 0;
+}
+
+#heart4 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(200deg) rotateZ(45deg) translateX(62px);
+    border: solid #60b247;
+    border-width: 5px 5px 0 0;
+    }
+
+#heart5 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(250deg) rotateZ(45deg) translateX(62px);
+    border: solid #1470bd;
+    border-width: 5px 5px 0 0;
+}
+
+#heart6 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(300deg) rotateZ(45deg) translateX(62px);
+    border: solid #76469a;
+    border-width: 5px 5px 0 0;
+}
+
+#heart7 {
+    position: absolute;
+    width: 200px;
+    height: 325px;
+    border-width: 1px 1px 0 0;
+    border-radius: 50% 50% 0 / 40% 50% 0;
+    transform: rotateY(350deg) rotateZ(45deg) translateX(62px);
+    border: solid #BD245C;
+    border-width: 5px 5px 0 0;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+    }
+}
+
+

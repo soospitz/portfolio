@@ -1,0 +1,17 @@
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    background-color: #151515;
+    padding: 15px;
+    color: white;
+    line-height: 1.6;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+a {
+    color: #96d1ea
+}

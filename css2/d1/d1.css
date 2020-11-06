@@ -1,0 +1,226 @@
+html,
+body {
+    background-color: #111;
+}
+
+.light {
+	padding-left: 50px;
+	padding-bottom: 80px;
+}
+
+.day .radiocity {
+	height: 230px;
+	animation-name: radiocityA;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+@keyframes radiocityA {
+	0%   {filter: saturate(150%);}
+	50%  {filter: saturate(100%);}
+	75%  {filter: saturate(200%);}
+	100% {filter: saturate(0%);}
+}
+
+.day .radiocity:hover {
+	opacity: 30%;
+}
+
+.night .radiocity {
+	padding-top: 20px;
+    padding-left: 40px;
+	height: 230px;
+	opacity: 10%;
+	filter: saturate(10%);
+}
+
+
+.day .open {
+    padding-left: 50px;
+    margin-bottom: 50px;
+    height: 170px;
+    animation-name: openA;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes openA {
+ 	0%   {filter: saturate(20%);}
+	50%  {filter: saturate(70%);}
+	75%  {filter: saturate(150%);}
+	100% {filter: saturate(50%);}
+
+}
+.day .open:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.night .open {
+	padding-left: 50px;
+    margin-bottom: 50px;
+    height: 170px;
+	opacity: 20%;
+	filter: saturate(10%);
+}
+
+.day .pepsicola {
+	height: 200px;
+	padding:20px;
+	margin-left: 20px;
+}
+
+.night .pepsicola {
+	height: 200px;
+	padding:20px;
+	margin-left: 20px;
+	opacity:20%;
+	filter: saturate(10%);
+}
+
+.day .subway {
+	position: relative;
+	height: 150px;
+	animation-name: sub;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.day .subway:hover {
+	transform: rotateX(150deg);
+}
+
+.night .subway {
+	opacity: 10%;
+	position: relative;
+	height: 150px;
+	filter: saturate(10%);
+}
+
+@keyframes sub {
+  0%   {left:0px; top:0px;}
+  25%  {left:500px; top:0px;}
+  50%  {left:500px; top:20px;}
+  75%  {left:0px; top:20px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.day .cafe {
+	height: 200px;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 70px;
+	animation-name: spin;
+	animation-duration: 5000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+.night .cafe {
+	height: 200px;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 70px;
+	opacity: 20%;
+	filter: saturate(10%);
+}
+
+.day .cafe:hover {
+	animation-play-state: paused;
+	filter: saturate(500%);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.day .parking {
+	margin-left: 320px;
+    height: 450px;
+    position: absolute;
+    margin-top: -450px;
+}
+
+.night .parking {
+	margin-left: 320px;
+    height: 450px;
+    position: absolute;
+    margin-top: -450px;
+    opacity:10%;
+    filter: saturate(10%);
+}
+
+.day .nypd {
+	transform: rotate(90deg);
+	height: 51px;
+	margin-left: 240px;
+	margin-top: 150px;
+	position: absolute;
+	animation-name: nyp;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.day .nypd:hover {
+	filter: saturate(500%);
+}
+
+.night .nypd {
+	transform: rotate(90deg);
+	height: 51px;
+	margin-left: 240px;
+	margin-top: 150px;
+	position: absolute;
+	opacity:10%;
+    filter: saturate(10%);
+}
+
+@keyframes nyp {
+  0%   {top:220px;}
+  20%  {top:80px;}
+  55%  {top:80px;}
+  70%  {top:220px;}
+  100% {top:220px;}
+}
+
+
+body.day #on {
+  cursor: pointer;
+}
+body.night #on {
+  display: none;
+}
+body.day #off {
+  display: none;
+}
+body.night #off {
+  cursor: pointer;
+}
+
+
+
