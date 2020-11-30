@@ -61,7 +61,6 @@ body.day #link {
   }
 }
 
-
 /* -------- MENU --------  */
 
 .night .menu {
@@ -250,7 +249,7 @@ nav a#toggle-button {
   width: 40px;
   height: 40px;
   padding-bottom: 30px;
-
+  z-index: 100;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -283,7 +282,6 @@ nav a#toggle-button {
   }
 }
 
-
 /* --------  EXPERIENCES -------- */
 .experience {
   padding: 20px 20px 20px;
@@ -298,7 +296,6 @@ nav a#toggle-button {
 }
 .experience-container img {
   padding-top: 90px;
-
 }
 .night #logo-day {
   display: none;
@@ -328,9 +325,7 @@ nav a#toggle-button {
   margin: 15px;
 }
 
-
 .day .card {
- 
   color: #343233;
   background-color: #fff8f8;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
@@ -346,10 +341,10 @@ nav a#toggle-button {
   background-color: #202022;
 }
 .night .card h4 {
-  color: #79797B;
+  color: #79797b;
 }
 .night .card p {
-  color: #C6C6C6;
+  color: #c6c6c6;
 }
 .night .card:hover {
   background-color: #28282b;
@@ -367,7 +362,6 @@ nav a#toggle-button {
     max-width: 100%;
   }
   .experience-container {
- 
     position: relative;
     margin: 0px;
   }
@@ -379,7 +373,6 @@ nav a#toggle-button {
     padding: 0px;
     display: none;
   }
-
 }
 
 /* --------  PROJECT -------- */
@@ -403,8 +396,8 @@ nav a#toggle-button {
   padding-top: 50px;
 }
 
-.ios {
-  padding-right: 50px;
+#imgFront {
+  padding-top: 75px;
 }
 
 #cssProject {
@@ -413,7 +406,6 @@ nav a#toggle-button {
   margin-left: -50px;
   margin-top: 30px;
 }
-
 
 @media screen and (max-width: 580px) {
   .project-container {
@@ -487,7 +479,7 @@ nav a#toggle-button {
   transform: rotateY(200deg) rotateZ(45deg) translateX(62px);
   border: solid #60b247;
   border-width: 5px 5px 0 0;
-  }
+}
 
 .heart5 {
   position: absolute;
@@ -524,23 +516,22 @@ nav a#toggle-button {
   border-radius: 60% 80% 0 / 40% 50% 0;
   animation: show 1s 3.5s infinite alternate linear;
   transform: rotateY(350deg) rotateZ(45deg) translateX(62px);
-  border: solid #BD245C;
+  border: solid #bd245c;
   border-width: 5px 5px 0 0;
 }
 
-
 @keyframes spin {
   to {
-      transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+    transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
   }
 }
 
 @keyframes show {
   from {
-      opacity:1;
+    opacity: 1;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 /* --------  SKILLS -------- */
@@ -641,8 +632,7 @@ nav a#toggle-button {
 }
 
 @media screen and (max-width: 580px) {
-  
-  .contact-container .icons{
+  .contact-container .icons {
     margin: 10px 5px 10px;
     text-align: left;
     padding: 0;
@@ -651,8 +641,6 @@ nav a#toggle-button {
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
   }
-
-
 }
 
 /* --------  FOOTER -------- */
@@ -664,7 +652,7 @@ footer {
   padding-bottom: 4em;
 }
 
-.night footer{
+.night footer {
   background-color: #161616;
 }
 footer span .day {

@@ -6,7 +6,7 @@
 
 	<title>Soo's Portfolio Website</title>
 
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./css/main.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/ccde37258c.js" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@
 				</div>
 				
 			</div>
-			<div class="arrow bounce"></div>
+			<div class="arrow"></div>
 		</div>
 	</div>
 	<!------ end of home ------>
@@ -62,13 +62,29 @@
 					<div class="cards">
 					<div class="card">
 						<div class="front">
-							<img src="img/subway.png" alt="subway" style="height: 100px; padding-top:80px">
+							<i class="fas fa-viruses fa-8x" id="imgFront"></i>
+						</div>
+						<div  class="back">
+							<h2>Covid-19 Tracker | React</h2>
+							<h4>Covid-19 Tracker App using <i>React</i></h4>
+							<p>• Real-time Covid-19 Tracker App that allows users to search and display chart for # of Confirmed, Deaths, and Recovered cases<br>
+								• Implemented Covid-19 data API using Chart JS and Hooks</p>
+							<div class="play">
+								<h4>Check out the Website <a href="https://soospitz.github.io/covid-tracker/" id="link">here</a></h4>
+								<h4>Check out the code <a href="https://github.com/soospitz/covid-tracker/" id="link">here</a></h4>
+							</div>
+						</div>
+					</div>	
+					<div class="card">
+						<div class="front">
+							<img src="img/subway.png" alt="subway" id="logo-night" style="height: 100px; padding-top:80px">
+							<img src="img/subwayb.png" alt="subway" id="logo-day" style="height: 100px; padding-top:80px">
 						</div>
 						<div  class="back">
 							<h2>NYC Subway | React</h2>
 							<h4>Subway Schedule App using <i>React</i></h4>
 							<p>• Real-time NYC Subway Schedule App that allows users to search and display NYC Subway arrival times<br>
-								• Implemented MTA’s real-time subway feed API to render and auto-refresh data using React JS and Moment JS</p>
+								• Implemented MTA’s real-time subway feed API to render and auto-refresh data using React JS, Moment JS, and Hooks</p>
 							<div class="play">
 								<h4>Check out the Website <a href="https://soospitz.github.io/subway/" id="link">here</a></h4>
 								<h4>Check out the code <a href="https://github.com/soospitz/subway/" id="link">here</a></h4>
@@ -77,15 +93,14 @@
 					</div>
 					<div class="card">
 						<div class="front">
-							<img src="img/subway.png" alt="subway" id="logo-night" style="height: 100px; padding-top:80px">
-							<img src="img/subwayb.png" alt="subway" id="logo-day" style="height: 100px; padding-top:80px">
+							<i class="fas fa-shopping-cart fa-8x" id="imgFront"></i>
 						</div>
 						<div class="back">
 							<h2>PM Shop | React</h2>
 							<h4>Online Shop Web App using <i>React</i></h4>
 							<p>• Website that allows user to browse <br/> products and add to cart<br/>
 								• Features filterable and sortable <br/>list of products, add and remove items <br/>from cart,
-								responsive design, and <br/>dynamic routing using React-Router</p>
+								responsive design, Hooks, and <br/>dynamic routing using React-Router</p>
 							<div class="play">
 								<h4>Check out the Website <a href="https://soospitz.github.io/shopping-app/#/" id="link">here</a></h4>
 								<h4>Check out the code <a href="https://github.com/soospitz/shopping-app/" id="link">here</a></h4>
@@ -101,7 +116,7 @@
 							<h2>Weather App | React</h2>
 							<h4>Weather Search App using <i>React</i></h4>
 							<p>• Weather Search App that allows users to search City or Zip Code to display weather<br>
-								• Integrated Weather API service to retrieve weather data using openweathermap.org/api</p>
+							  • Integrated Weather API service to retrieve weather data using openweathermap.org/api</p>
 							<div class="play">
 								<h4>Check out the Website <a href="https://soospitz.github.io/weather/" id="link">here</a></h4>
 								<h4>Check out the code <a href="https://github.com/soospitz/weather/" id="link">here</a></h4>
@@ -159,16 +174,11 @@
 								• Integrated Core Data for user data and used animation and graphics for UIc</p>
 							<h4>Check out the code <a href="https://github.com/soospitz/LifeCalculator/" id="link">here</a></h4>
 						</div>
-						<!-- <div class="rightitem">
-							<div class="ios">
-								<img src="img/iOS.png" style="height: 330px;">
-							</div>
-						</div> -->
 					</div>
 					<div class="card">
 						<div class="back">
 							<h2>LOBO Mockup | 2019</h2>
-							<h4>Interactive mobile application mockup <br>made with <i>Adobe XD</i></h4>
+							<h4>Interactive mobile application mockup made with <i>Adobe XD</i></h4>
 							<div class="play">
 								<h4>Check out the Mockup <a href="./lobo/index.html" id="link">here</a></h4>
 							</div>
@@ -176,14 +186,11 @@
 						<div class="front">
 							<img src="img/lobo.png" id="logo-night" style="height: 100px; padding-top:80px">
 							<img src="img/lobob.png" id="logo-day" style="height: 100px; padding-top:80px">
-							<!-- <video width="470" height="390" controls>
-  							 <source src="mockup.mp4" type="video/mp4">
-							</video> -->
 							</div>
 					</div>
 					<div class="card">
 						<div class="back">
-							<h2>Motion Graphics Project | 2018</h2>
+							<h2>Motion Graphics Project</h2>
 							<h4>Short personal animation project <br>made with <i>Adobe After Effects</i></h4>
 							<h4>Check out the Video <a href="./motion/index.html" id="link">here</a></h4>
 						</div>
@@ -198,8 +205,8 @@
 						<div class="back">
 							<h2>CSS Animations | 2020</h2>
 							<h4>Links to fun <i>CSS</i> Animation projects</h4>
-							<li><a href="./css1/index.html" id="link">Heart Animation</a></li>
-								<li><a href="./css2/index.html" id="link">Multilayered drawing</a></li>
+							<li><a href="./animation/css1/index.html" id="link">Heart Animation</a></li>
+								<li><a href="./animation/css2/index.html" id="link">Multilayered drawing</a></li>
 								<li>More to come!</li>
 						</div>
 						<div class="front">
