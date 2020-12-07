@@ -6,12 +6,11 @@
 
 	<title>Soo's Portfolio Website</title>
 
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/styles.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/ccde37258c.js" crossorigin="anonymous"></script>
 	<link rel="shortcut icon" href="img/cmoon.png">
-
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
 
@@ -39,17 +38,36 @@
 	<!------ Home ------>
 	<div class="home" id="home">
 		<div class="section">
-			<div class="container">
-				<img src="img/cmoon.png" id="moon" style="height: 50px;">
-				<img src="img/csun.png" id="sun" style="height: 50px;">
-				<h5>Click Me!</h5>
+			<div class="home-container">
+				<div class="moonSun">
+					<img src="img/cmoon.png" id="moon" style="height: 50px;">
+					<img src="img/csun.png" id="sun" style="height: 50px;">
+					<p>Click Me!</p>
+				</div>
 				<div class="home-content">
-					<h1>Soo Spitz</h1>
-					<p>Hi!  &mdash;  I am a recent graduate from New York University <i class="em em-female-student" aria-role="presentation" aria-label=""></i> major in Computer Science <i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>, minoring in Web Development <i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> and Graphic Design! <i class="em em-lower_left_paintbrush" aria-role="presentation" aria-label=""></i> Currently located in New York City <i class="em em-flag-um" aria-role="presentation" aria-label="U.S. Outlying Islands Flag"></i> looking for full-time opportunities!</p>
+					<!-- <h1>Hi!  &mdash;  I am Soo<br>
+					I'm a <div class="textAnimated"></div></h1> -->
+					<pre id="typewriter">
+						<span class="var-highlight">let</span> aboutMe = {
+							name: <span class="string-highlight">'Soo Spitz'</span>,
+							school: <span class="string-highlight">'New York University'</span>,
+							major: <span class="string-highlight">'Computer Science'</span>,
+							minors: [<span class="string-highlight">'Web Development</span>,
+								 <span class="string-highlight">'Graphic Design'</span>],
+							skills: [<span class="string-highlight">'Javascript'</span>,
+								 <span class="string-highlight">'React'</span>,
+								 <span class="string-highlight">'HTML'</span>,
+								 <span class="string-highlight">'CSS'</span>,
+								 <span class="string-highlight">'Korean'</span>,
+								 <span class="string-highlight">'Adobe Suites'</span>],
+							location: <span class="string-highlight">'New York City'</span>
+						}; </pre>
 				</div>
 				
+
 			</div>
-			<div class="arrow"></div>
+			<img class="arrow bounce" src="img/arrow.svg">
+		
 		</div>
 	</div>
 	<!------ end of home ------>
@@ -302,60 +320,6 @@
 		</div>
 	</div>
 	<!------ end of experiences ------>
-	
-
-
-	<!------ skills ------>
-	<!-- <div class="skill" id="skill">
-		<div class="container">
-			<h1>Skills</h1>
-
-			<div class="skills-container">
-
-				<div class="sc1">
-					<i class="fas fa-code fa-4x"></i>
-					<ul>
-						<h4>LANGUAGES</h4>
-						<li>JavaScript</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
-				</div>
-				<div class="sc2">
-					<i class="fas fa-wrench fa-4x"></i>
-					<ul>
-						<h4>TOOLS</h4>
-						<li>Xcode</li>
-						<li>Unity</li>
-						<li>Sketch</li>
-						<li>MS Office</li>
-					</ul>
-				</div>
-				<div class="sc2">
-					<i class="fas fa-palette fa-4x"></i>
-					<ul>
-						<h4>DESIGN</h4>
-						<li>Adobe Illustrator</li>
-						<li>Adobe InDesign</li>
-						<li>Adobe Photoshop</li>
-						<li>Adobe XD</li>
-						<li>Adobe After Effects</li>
-					</ul>
-				</div>
-					<div class="sc4">
-						<i class="fas fa-globe-americas fa-4x"></i>
-					<ul>
-						<h4>OTHER</h4>
-						<li>Native in Korean and English</li>
-						<li>Agile Software Development</li>
-					</ul>
-				</div>	
-			</div>
-		</div>
-	</div> -->
-	<!------ end of skills ------>
-
 
 	<!------ contact ------>
 	<div class="contact" id="contact">
@@ -365,7 +329,7 @@
 				<div class="icons">
 					<a href="mailto:soospitz@gmail.com"><i class="far fa-envelope fa-4x" id="email"></i></a>
 					<a href="https://www.linkedin.com/in/soospitz/"><i class="fab fa-linkedin fa-4x" id="linkedin"></i></a>
-					<a href="https://www.instagram.com/soo___oos/"><i class="fab fa-instagram fa-4x" id="instagram"></i></a>
+					<!-- <a href="https://www.instagram.com/soo___oos/"><i class="fab fa-instagram fa-4x" id="instagram"></i></a> -->
 					<a href="https://github.com/soospitz"><i class="fab fa-github fa-4x" id="github"></i></a>
 				</div>
 				
@@ -373,7 +337,6 @@
 		</div>
 	</div>
 	<!------ end of contact ------>
-
 
 
 	<!------ footer ------>

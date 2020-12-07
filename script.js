@@ -81,72 +81,7 @@ $(".card").mouseenter(function(){
     $(this).find(".back").css('display','none')
   })
 
-  $("#email").hover(
-    function () {
-      $(this).attr("src", function (index, attr) {
-        return attr.replace("gemail.png", "email.png");
-      });
-    },
-    function () {
-      $(this).attr("src", function (index, attr) {
-        return attr.replace("email.png", "gemail.png");
-      });
-    }
-  );
-
 // social icon hover
-
-$("#email").hover(
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("gemail.png", "email.png");
-    });
-  },
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("email.png", "gemail.png");
-    });
-  }
-);
-
-$("#linkedin").hover(
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("glinkedin.png", "linkedin.png");
-    });
-  },
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("linkedin.png", "glinkedin.png");
-    });
-  }
-);
-
-$("#facebook").hover(
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("gfacebook.png", "facebook.png");
-    });
-  },
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("facebook.png", "gfacebook.png");
-    });
-  }
-);
-
-$("#instagram").hover(
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("ginstagram.png", "instagram.png");
-    });
-  },
-  function () {
-    $(this).attr("src", function (index, attr) {
-      return attr.replace("instagram.png", "ginstagram.png");
-    });
-  }
-);
 
 $("#github").hover(
   function () {
@@ -160,3 +95,76 @@ $("#github").hover(
     });
   }
 );
+
+//typewriter
+
+function setupTypewriter(t) {
+  var HTML = t.innerHTML;
+
+  t.innerHTML = "";
+
+  var cursorPosition = 0,
+      tag = "",
+      writingTag = false,
+      tagOpen = false,
+      typeSpeed = 20,
+    tempTypeSpeed = 0;
+
+  var type = function() {
+    
+      if (writingTag === true) {
+          tag += HTML[cursorPosition];
+      }
+
+      if (HTML[cursorPosition] === "<") {
+          tempTypeSpeed = 0;
+          if (tagOpen) {
+              tagOpen = false;
+              writingTag = true;
+          } else {
+              tag = "";
+              tagOpen = true;
+              writingTag = true;
+              tag += HTML[cursorPosition];
+          }
+      }
+      if (!writingTag && tagOpen) {
+          tag.innerHTML += HTML[cursorPosition];
+      }
+      if (!writingTag && !tagOpen) {
+          if (HTML[cursorPosition] === " ") {
+              tempTypeSpeed = 0;
+          }
+          else {
+              tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+          }
+          t.innerHTML += HTML[cursorPosition];
+      }
+      if (writingTag === true && HTML[cursorPosition] === ">") {
+          tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+          writingTag = false;
+          if (tagOpen) {
+              var newSpan = document.createElement("span");
+              t.appendChild(newSpan);
+              newSpan.innerHTML = tag;
+              tag = newSpan.firstChild;
+          }
+      }
+
+      cursorPosition += 1;
+      if (cursorPosition < HTML.length - 1) {
+          setTimeout(type, tempTypeSpeed);
+      }
+
+  };
+
+  return {
+      type: type
+  };
+}
+
+var typer = document.getElementById('typewriter');
+
+typewriter = setupTypewriter(typewriter);
+
+typewriter.type();
