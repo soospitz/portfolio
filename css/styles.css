@@ -675,8 +675,8 @@ footer span .night {
     margin: 0px;
     padding: 0px;
   }
-  .contact-container {
-    margin: 0;
-    padding: 0;
+  .contact {
+    margin: 0px;
+    padding: 10px;
   }
 }
