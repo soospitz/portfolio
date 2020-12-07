@@ -232,7 +232,6 @@ nav a#toggle-button {
 .day .experience {
   background-color: white;
 }
-
 .experience-container {
   padding: 40px 20px 20px;
   text-align: center;
@@ -300,7 +299,9 @@ nav a#toggle-button {
 }
 
 /* --------  PROJECT -------- */
-
+.project {
+  padding: 20px 20px 20px;
+}
 .night .project .container {
   background-color: #161616;
 }
@@ -315,29 +316,17 @@ nav a#toggle-button {
   line-height: 1.2;
   font-size: 0.9em;
 }
-
 .haven {
   padding-top: 50px;
 }
-
 #imgFront {
   padding-top: 75px;
 }
-
 #cssProject {
   line-height: 200%;
   letter-spacing: 1.5px;
   margin-left: -50px;
   margin-top: 30px;
-}
-
-@media screen and (max-width: 580px) {
-  .project-container {
-    text-align: left;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-  }
 }
 
 /* -------- Project - CSS heart -------*/
@@ -625,11 +614,9 @@ footer span .night {
     content: "";
     display: table;
   }
-
   .menu:after {
     clear: both;
   }
-
   .menu {
     zoom: 1;
   }
@@ -675,5 +662,21 @@ footer span .night {
     margin: 10px;
     padding: 30px;
     height: 300px;
+  }
+  .project-container {
+    text-align: left;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .experience-container {
+    text-align: left;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+  .contact-container {
+    margin: 0;
+    padding: 0;
   }
 }
